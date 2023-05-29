@@ -1,0 +1,52 @@
+.btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  &--big {
+    padding: 12px 24px;
+    background-image: linear-gradient(
+      to top,
+      rgba($color: $blue, $alpha: 0.6),
+      rgba($color: $blue, $alpha: 1.2)
+    );
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 2px 5px rgba($color: $dark, $alpha: 0.6);
+    box-shadow: 0px 3px 0px rgba($color: $blue, $alpha: 0.3);
+    @include mobile {
+      background-image: linear-gradient(
+        180deg,
+        #fe9f9f 0%,
+        #ef3f40 50.52%,
+        #fa4647 100%
+      );
+      box-shadow: 0px 4px 0px #c20e11;
+    }
+  }
+  &--flat {
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    background-color: $blue;
+    border-radius: 10px;
+  }
+  &--install {
+    height: 52px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $grey;
+    box-shadow: 0px 0px 8px rgba(26, 26, 26, 0.08);
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.container-large {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  @include mobile {
+    display: block;
+    margin: unset;
+  }
+}

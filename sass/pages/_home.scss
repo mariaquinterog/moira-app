@@ -1,0 +1,129 @@
+// Sections
+.section {
+  &__title {
+  
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 16px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+    &:hover {
+      text-decoration: underline;
+    }
+    span {
+      margin-right: 5px;
+    }
+    &--play {
+      color: $blue;
+      .arrow,
+      .game-icon {
+        fill: $blue;
+      }
+    }
+    &--learn {
+      color: $yellow;
+      .arrow,
+      .learn-icon {
+        fill: $yellow;
+      }
+    }
+    &--enjoy {
+      color: $purple;
+      .arrow,
+      .enjoy-icon {
+        fill: $purple;
+      }
+    }
+    &--fitness {
+      color: $green;
+      .arrow,
+      .fitness-icon {
+        fill: $green;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 8px;
+  }
+  &__subtitle {
+    font-size: 17px;
+    font-weight: 600;
+    color: $dark;
+  }
+  &__more-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $dark;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 15px;
+    .arrow {
+      fill: $dark;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Intro
+.intro {
+  margin-bottom: 24px;
+  &__banner {
+    margin-bottom: 24px;
+    padding: 24px 32px;
+    height: 365px;
+    background-image: url("../assets/images/playfrozen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @include mobile {
+      margin-bottom: 20px;
+      height: 275px;
+      padding: 20px 15px;
+      background-image: url("../assets/images/spiderman.jpg");
+    }
+    .disney-part__photo {
+      display: block;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+    &__title {
+      margin-top: 20px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $white;
+      @include mobile {
+        margin: 10px 0;
+      }
+    }
+  }
+  &__title {
+    color: $dark;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    @include mobile {
+      text-align: left;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    @include mobile {
+      text-align: left;
+    }
+  }
+}

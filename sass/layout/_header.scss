@@ -1,0 +1,30 @@
+.header-mobile {
+  display: none;
+  padding: 10px 0;
+  @include mobile {
+    display: block;
+  }
+  .logo {
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    &__link {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #bbc0c6;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      svg {
+        fill: #bbc0c6;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+// cards wrapper
+.cards {
+  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 315px;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(26, 26, 26, 0.08);
+  &__photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+    display: block;
+  }
+  &__body {
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  &__avatar {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 22.5px;
+    margin-bottom: 4px;
+    color: $dark;
+  }
+  &__statistic {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $grey;
+  }
+}
+
+.card-video {
+  flex-shrink: 0;
+  width: 315px;
+  border-radius: 10px;
+  @include mobile {
+    width: 170px;
+  }
+  &__photo {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 15px;
+    line-height: 1.5;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

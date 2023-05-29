@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moira</title>
+    <link rel="stylesheet" href="sass/main.css" />
+  </head>
+  <body>
+    <div class="container-large">
+      <!-- Header for mobile -->
+      <header class="header-mobile">
+        <img src="./assets/images/logo.png" alt="logo" class="logo" />
+        <nav class="header-mobile__nav">
+          <a href="" class="header-mobile__nav__link">
+            <svg class="game-icon" width="20" height="18">
+              <use xlink:href="#game-icon"></use>
+            </svg>
+            <span>Play</span>
+          </a>
+          <a href="" class="header-mobile__nav__link">
+            <svg class="learn-icon" width="16" height="22">
+              <use xlink:href="#learn-icon"></use>
+            </svg>
+            <span>Learn</span>
+          </a>
+          <a href="" class="header-mobile__nav__link">
+            <svg class="enjoy-icon" width="20" height="21">
+              <use xlink:href="#enjoy-icon"></use>
+            </svg>
+            <span>Enjoy</span>
+          </a>
+          <a href="" class="header-mobile__nav__link">
+            <svg class="fitness-icon" width="18" height="21">
+              <use xlink:href="#fitness-icon"></use>
+            </svg>
+            <span>Fitness</span>
+          </a>
+        </nav>
+      </header>
+
+      <!-- Mobile menu -->
+      <label for="menu-input" class="mobile-menu">
+        <img src="./assets/icons/menu.svg" alt="menu" />
+      </label>
+      <input id="menu-input" class="menu-input" type="checkbox" />
+
+      <!-- Left Nav -->
+      <aside class="nav-left">
+        <label for="menu-input" class="mobile-close">
+          <img src="./assets/icons/close.svg" alt="close" />
+        </label>
+        <img src="./assets/images/logo.png" alt="logo" class="logo" />
+        <nav class="nav">
+          <a href="" class="nav__link">
+            <span class="nav__link__icon nav__link__icon--game">
+              <svg class="game-icon" width="20" height="18">
+                <use xlink:href="#game-icon"></use>
+              </svg>
+            </span>
+            <span>Play</span>
+            <svg class="arrow" width="8" height="14">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
+          <a href="" class="nav__link">
+            <span class="nav__link__icon nav__link__icon--learn">
+              <svg class="learn-icon" width="16" height="22">
+                <use xlink:href="#learn-icon"></use>
+              </svg>
+            </span>
+            <span>Learn</span>
+            <svg class="arrow" width="8" height="14">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
+          <a href="" class="nav__link">
+            <span class="nav__link__icon nav__link__icon--enjoy">
+              <svg class="enjoy-icon" width="20" height="21">
+                <use xlink:href="#enjoy-icon"></use>
+              </svg>
+            </span>
+            <span>Enjoy</span>
+            <svg class="arrow" width="8" height="14">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
+          <a href="" class="nav__link">
+            <span class="nav__link__icon nav__link__icon--fitness">
+              <svg class="fitness-icon" width="18" height="21">
+                <use xlink:href="#fitness-icon"></use>
+              </svg>
+            </span>
+            <span>Fitness</span>
+            <svg class="arrow" width="8" height="14">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
+        </nav>
+        <div class="nav-left__footer">
+          <div class="nav-left__footer__wrapper">
+            <div class="nav-left__footer__icon">
+              <a href="" class="nav-left__footer__icon__link">
+                <img src="./assets/icons/contact.svg" alt="contact" />
+              </a>
+              <a href="" class="nav-left__footer__icon__link">
+                <img src="./assets/icons/question.svg" alt="question" />
+              </a>
+              <a href="" class="nav-left__footer__icon__link">
+                <img src="./assets/icons/world.svg" alt="world" />
+              </a>
+            </div>
+            <div class="nav-left__footer__select">
+              <span>English</span>
+              <img src="./assets/icons/down-arrow.svg" alt="down-arrow" />
+            </div>
+          </div>
+          <button class="btn btn--install">
+            <img src="./assets/images/google-play.png" alt="google-play" />
+            <span>INSTALL MOIRA APP</span>
+          </button>
+        </div>
+      </aside>
+      <!-- Main -->
+
+      <main>
+        <div class="container">
+          <!-- Intro -->
+          <section class="intro">
+            <div class="intro__banner">
+              <div class="intro__banner__content">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./assets/images/playspiderman_logo.png"
+                  />
+                  <img src="./assets/images/disney+.png" alt="banner logo" />
+                </picture>
+                <p class="intro__banner__title">
+                  The Official Movie Mobile Games
+                </p>
+                <button class="btn btn--big">Play Now</button>
+              </div>
+            </div>
+            <h1 class="intro__title">Moira unlimited content</h1>
+            <p class="intro__subtitle">
+              The Latest Movies, TV Shows, Games, Music & More...
+            </p>
+          </section>
+
+          <!-- Play -->
+          <section class="play">
+            <a href="" class="section__title section__title--play">
+              <svg class="game-icon" width="20" height="18">
+                <use xlink:href="#game-icon"></use>
+              </svg>
+              <span>Play</span>
+              <svg class="arrow" width="8" height="14">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <div class="section__header">
+              <h3 class="section__subtitle">Trending</h3>
+              <a href="" class="section__more-link">
+                <span>See more</span>
+                <svg class="arrow" width="8" height="14">
+                  <use xlink:href="#arrow"></use></svg
+              ></a>
+            </div>
+            <div class="cards">
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="game01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Disney XD Villains Ahead!</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/game02.jpg"
+                  alt="game02"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game02.jpg"
+                    alt="game02"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Monster Hunting!</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/game03.png"
+                  alt="game03"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game03.png"
+                    alt="game03"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">The Simpsons Matching Pairs</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="section__header">
+              <h3 class="section__subtitle">Must Play</h3>
+              <a href="" class="section__more-link">
+                <span>See more</span>
+                <svg class="arrow" width="8" height="14">
+                  <use xlink:href="#arrow"></use></svg
+              ></a>
+            </div>
+            <div class="cards">
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="game01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Disney XD Villains Ahead!</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="game01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Disney XD Villains Ahead!</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="game01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Disney XD Villains Ahead!</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Learn -->
+          <section class="learn">
+            <a href="" class="section__title section__title--learn">
+              <svg class="learn-icon" width="16" height="22">
+                <use xlink:href="#learn-icon"></use>
+              </svg>
+              <span>Learn</span>
+              <svg class="arrow" width="8" height="14">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <div class="section__header">
+              <h3 class="section__subtitle">Must Have</h3>
+            </div>
+            <div class="cards">
+              <article class="card">
+                <img
+                  src="./assets/images/app01.png"
+                  alt="app01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/app01.png"
+                    alt="app01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Teach Duolingo Language</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/app02.png"
+                  alt="app02"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/app02.png"
+                    alt="app02"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">English Vocabulary</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/app03.png"
+                  alt="app03"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/app03.png"
+                    alt="app03"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Answer the Questions</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Doctor Doofenshmirtz did it again! With his new device, he
+                      is really...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Enjoy -->
+          <section class="enjoy">
+            <a href="" class="section__title section__title--enjoy">
+              <svg class="enjoy-icon" width="20" height="21">
+                <use xlink:href="#enjoy-icon"></use>
+              </svg>
+              <span>Enjoy</span>
+              <svg class="arrow" width="8" height="14">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <div class="section__header">
+              <h3 class="section__subtitle">Trending Videos</h3>
+            </div>
+            <div class="cards">
+              <article class="card-video">
+                <img
+                  src="./assets/images/video01.jpg"
+                  alt="video01"
+                  class="card-video__photo"
+                />
+                <p class="card-video__title">
+                  Turtles are one of the oldest groups of reptiles
+                </p>
+              </article>
+              <article class="card-video">
+                <img
+                  src="./assets/images/video02.jpg"
+                  alt="video02"
+                  class="card-video__photo"
+                />
+                <p class="card-video__title">
+                  Turtles are one of the oldest groups of reptiles
+                </p>
+              </article>
+              <article class="card-video">
+                <img
+                  src="./assets/images/vidoe03.jpg"
+                  alt="video03"
+                  class="card-video__photo"
+                />
+                <p class="card-video__title">
+                  Turtles are one of the oldest groups of reptiles
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Fitness -->
+          <section class="fitness">
+            <a href="" class="section__title section__title--fitness">
+              <svg class="fitness-icon" width="18" height="21">
+                <use xlink:href="#fitness-icon"></use>
+              </svg>
+              <span>Fitness</span>
+              <svg class="arrow" width="8" height="14">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <div class="section__header">
+              <h3 class="section__subtitle">Must Have</h3>
+              <a href="" class="section__more-link">
+                <span>See more</span>
+                <svg class="arrow" width="8" height="14">
+                  <use xlink:href="#arrow"></use></svg
+              ></a>
+            </div>
+            <div class="cards">
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="app01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Pedometer & Training Tracer</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Ideal app for your diet and health. Track every important thing.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="game01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Fitness Clause</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Simple app which will follow your progress in the gym. 
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="./assets/images/game01.png"
+                  alt="game01"
+                  class="card__photo"
+                />
+                <div class="card__body">
+                  <img
+                    src="./assets/images/game01.png"
+                    alt="game01"
+                    class="card__avatar"
+                  />
+                  <div class="card__body__content">
+                    <p class="card__title">Guidebook for Yoga Drill</p>
+                    <div class="card__statistic">
+                      <div class="stars">
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img src="./assets/icons/star.svg" alt="star" />
+                        <img
+                          src="./assets/icons/start-disabled.svg"
+                          alt="star"
+                        />
+                      </div>
+                      <button class="btn btn--flat">Get</button>
+                    </div>
+                    <p class="card__description">
+                      Learn everything about Yoga in this guidebook and become better in...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <img src="./assets/images/logo.png" alt="logo" class="footer__logo" />
+      <p class="footer__terms">Terms | Privacy | Support</p>
+      <div class="footer__social">
+        <a href="" class="footer__social__link">
+          <img src="./assets/icons/facebook.svg" alt="facebook" />
+        </a>
+        <a href="" class="footer__social__link">
+          <img src="./assets/icons/instagram.svg" alt="instagram" />
+        </a>
+        <a href="" class="footer__social__link">
+          <img src="./assets/icons/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="" class="footer__social__link">
+          <img src="./assets/icons/youtube.svg" alt="youtube" />
+        </a>
+      </div>
+      <p class="footer__text">All rights reserved, © Moira.club 2022</p>
+    </footer>
+
+    <!-- svgs -->
+    <svg style="display: none">
+      <symbol id="arrow" viewBox="0 0 8 14">
+        <g>
+          <path
+            d="M5.1714 7.0007L0.22168 2.05093L1.63589 0.636719L7.9999 7.0007L1.63589 13.3646L0.22168 11.9504L5.1714 7.0007Z"
+          />
+        </g>
+      </symbol>
+      <symbol id="game-icon" viewBox="0 0 20 18">
+        <g>
+          <path
+            d="M2.50007 12C1.80137 12 1.21004 11.758 0.726072 11.2741C0.242105 10.7901 0.00012207 10.1987 0.00012207 9.50005C0.00012207 8.80135 0.242105 8.21001 0.726072 7.72602C1.21004 7.24206 1.80137 7.00007 2.50007 7.00007V4.50005C2.50007 4.09108 2.64783 3.73885 2.94335 3.44335C3.23885 3.14783 3.59108 3.00007 4.00005 3.00007H7.50007C7.50007 2.30137 7.74206 1.71004 8.22602 1.22607C8.71001 0.742105 9.30135 0.500122 10 0.500122C10.6987 0.500122 11.2901 0.742105 11.7741 1.22607C12.258 1.71004 12.5 2.30137 12.5 3.00007H16C16.409 3.00007 16.7612 3.14783 17.0567 3.44335C17.3523 3.73885 17.5 4.09108 17.5 4.50005V7.00007C18.1987 7.00007 18.7901 7.24206 19.274 7.72602C19.758 8.21001 20 8.80135 20 9.50005C20 10.1987 19.758 10.7901 19.274 11.2741C18.7901 11.758 18.1987 12 17.5 12V16.5C17.5 16.909 17.3523 17.2612 17.0567 17.5567C16.7612 17.8523 16.409 18 16 18H4.00005C3.59108 18 3.23885 17.8523 2.94335 17.5567C2.64783 17.2612 2.50007 16.909 2.50007 16.5V12ZM6.99892 10.25C7.34582 10.25 7.64106 10.1286 7.88465 9.88577C8.12823 9.64294 8.25002 9.34807 8.25002 9.00117C8.25002 8.65427 8.12861 8.35903 7.88577 8.11545C7.64294 7.87186 7.34807 7.75007 7.00117 7.75007C6.65427 7.75007 6.35903 7.87149 6.11545 8.11432C5.87186 8.35716 5.75007 8.65202 5.75007 8.99892C5.75007 9.34582 5.87149 9.64106 6.11432 9.88465C6.35716 10.1282 6.65202 10.25 6.99892 10.25ZM12.9989 10.25C13.3458 10.25 13.6411 10.1286 13.8846 9.88577C14.1282 9.64294 14.25 9.34807 14.25 9.00117C14.25 8.65427 14.1286 8.35903 13.8858 8.11545C13.6429 7.87186 13.3481 7.75007 13.0012 7.75007C12.6543 7.75007 12.359 7.87149 12.1154 8.11432C11.8719 8.35716 11.7501 8.65202 11.7501 8.99892C11.7501 9.34582 11.8715 9.64106 12.1143 9.88465C12.3572 10.1282 12.652 10.25 12.9989 10.25ZM6.25007 14.25H13.75V12.7501H6.25007V14.25ZM4.00005 16.5H16V4.50005H4.00005V16.5Z"
+          />
+        </g>
+      </symbol>
+      <symbol id="learn-icon" viewBox="0 0 16 22">
+        <g>
+          <path
+            d="M5.97308 16.5H7V11.5H9V16.5H10.0269C10.1589 15.2984 10.7721 14.3065 11.7676 13.2226C11.8797 13.1006 12.5988 12.3564 12.6841 12.2501C13.5318 11.1931 14 9.885 14 8.5C14 5.18629 11.3137 2.5 8 2.5C4.68629 2.5 2 5.18629 2 8.5C2 9.8843 2.46774 11.1917 3.31462 12.2484C3.40004 12.355 4.12081 13.1012 4.23154 13.2218C5.22766 14.3064 5.84103 15.2984 5.97308 16.5ZM6 18.5V19.5H10V18.5H6ZM1.75395 13.4992C0.65645 12.1297 0 10.3915 0 8.5C0 4.08172 3.58172 0.5 8 0.5C12.4183 0.5 16 4.08172 16 8.5C16 10.3925 15.3428 12.1315 14.2443 13.5014C13.624 14.2748 12 15.5 12 17V19.5C12 20.6046 11.1046 21.5 10 21.5H6C4.89543 21.5 4 20.6046 4 19.5V17C4 15.5 2.37458 14.2736 1.75395 13.4992Z"
+          />
+        </g>
+      </symbol>
+      <symbol id="enjoy-icon" viewBox="0 0 20 21">
+        <g>
+          <path
+            d="M10 20.5C4.47715 20.5 0 16.0228 0 10.5C0 4.97715 4.47715 0.5 10 0.5C15.5228 0.5 20 4.97715 20 10.5C20 16.0228 15.5228 20.5 10 20.5ZM10 18.5C14.4183 18.5 18 14.9183 18 10.5C18 6.08172 14.4183 2.5 10 2.5C5.58172 2.5 2 6.08172 2 10.5C2 14.9183 5.58172 18.5 10 18.5ZM8.6219 6.91459L13.5008 10.1672C13.6846 10.2897 13.7343 10.5381 13.6117 10.7219C13.5824 10.7658 13.5447 10.8035 13.5008 10.8328L8.6219 14.0854C8.4381 14.208 8.1897 14.1583 8.0672 13.9745C8.0234 13.9088 8 13.8316 8 13.7526V7.24741C8 7.02649 8.1791 6.84741 8.4 6.84741C8.479 6.84741 8.5562 6.87078 8.6219 6.91459Z"
+          />
+        </g>
+      </symbol>
+      <symbol id="fitness-icon" viewBox="0 0 18 21">
+        <g>
+          <path
+            d="M2.04612 11.75H4.99998C5.13843 11.75 5.26855 11.7846 5.39035 11.8539C5.51213 11.9231 5.60508 12.0269 5.6692 12.1654L6.99998 14.8077L10.3308 8.16541C10.4692 7.87822 10.6939 7.73463 11.0048 7.73463C11.3157 7.73463 11.5404 7.87822 11.6788 8.16541L13.4711 11.75H15.9538C15.7679 9.98591 15.0138 8.50321 13.6913 7.30193C12.3689 6.10065 10.8051 5.50001 8.99998 5.50001C7.19484 5.50001 5.63106 6.10065 4.30863 7.30193C2.98619 8.50321 2.23202 9.98591 2.04612 11.75ZM8.99998 19.5C10.8051 19.5 12.3689 18.8994 13.6913 17.6981C15.0138 16.4968 15.7679 15.0141 15.9538 13.25H13C12.8615 13.25 12.7314 13.2154 12.6096 13.1462C12.4878 13.0769 12.3949 12.9731 12.3308 12.8346L11 10.1923L7.6692 16.8442C7.53073 17.1314 7.30606 17.2734 6.99518 17.2702C6.68428 17.267 6.4596 17.1218 6.32115 16.8346L4.52882 13.25H2.04612C2.23202 15.0141 2.98619 16.4968 4.30863 17.6981C5.63106 18.8994 7.19484 19.5 8.99998 19.5ZM8.99998 21C7.83074 21 6.73075 20.7769 5.7 20.3307C4.66923 19.8846 3.76795 19.2756 2.99615 18.5038C2.22437 17.732 1.6154 16.8307 1.16925 15.8C0.723083 14.7692 0.5 13.6692 0.5 12.5H1.99997C1.99997 14.4333 2.68331 16.0833 4.04998 17.45C5.41664 18.8167 7.06664 19.5 8.99998 19.5C10.9333 19.5 12.5833 18.8167 13.95 17.45C15.3166 16.0833 16 14.4333 16 12.5H17.5C17.5 13.6692 17.2769 14.7692 16.8307 15.8C16.3846 16.8307 15.7756 17.732 15.0038 18.5038C14.232 19.2756 13.3307 19.8846 12.3 20.3307C11.2692 20.7769 10.1692 21 8.99998 21ZM0.5 12.5C0.5 11.3308 0.723083 10.2308 1.16925 9.20003C1.6154 8.16926 2.22437 7.26798 2.99615 6.49618C3.76795 5.7244 4.66923 5.11543 5.7 4.66928C6.73075 4.22311 7.83074 4.00003 8.99998 4.00003C10.0013 4.00003 10.9657 4.16991 11.8933 4.50966C12.8208 4.84941 13.682 5.33595 14.4769 5.96928L15.723 4.72313L16.7769 5.77696L15.5307 7.02311C16.164 7.81797 16.6506 8.67918 16.9903 9.60673C17.3301 10.5343 17.5 11.4987 17.5 12.5H16C16 10.5667 15.3166 8.91667 13.95 7.55001C12.5833 6.18334 10.9333 5.50001 8.99998 5.50001C7.06664 5.50001 5.41664 6.18334 4.04998 7.55001C2.68331 8.91667 1.99997 10.5667 1.99997 12.5H0.5ZM6.1923 2.24998V0.750031H11.8077V2.24998H6.1923ZM8.99998 19.5C7.06664 19.5 5.41664 18.8167 4.04998 17.45C2.68331 16.0833 1.99997 14.4333 1.99997 12.5C1.99997 10.5667 2.68331 8.91667 4.04998 7.55001C5.41664 6.18334 7.06664 5.50001 8.99998 5.50001C10.9333 5.50001 12.5833 6.18334 13.95 7.55001C15.3166 8.91667 16 10.5667 16 12.5C16 14.4333 15.3166 16.0833 13.95 17.45C12.5833 18.8167 10.9333 19.5 8.99998 19.5Z"
+          />
+        </g>
+      </symbol>
+    </svg>
+  </body>
+</html>
